@@ -22,11 +22,10 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Welcome to <br/> <span className="highlight"> Ronak Electricals</span>
+              Welcome to <br/> <span className="highlight"> Dheeraj Steelworks</span>
             </h1>
             <p className="hero-subtitle">
-              Powering your home with reliable electrical appliances, lighting solutions, and quality wiring products.
-              From everyday essentials to trusted branded appliances, we bring efficiency, safety, and comfort under one roof.
+              Your Trusted Partner in Steel & Fabrication. Providing Steel Solutions for a Stronger Tomorrow.
             </p>
                           <div className="hero-features">
                 <div className="feature">
