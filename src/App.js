@@ -10,7 +10,7 @@ import "./App.css";
 
 import { parseExcelFile } from "./utils/excelParser";
 const sheetUrl =
-  "https://docs.google.com/spreadsheets/d/181VgmP-JeTpoEkjOe9Ap8joECWt0CnkOY7Z-E3SePHU/export?format=xlsx";
+  "https://docs.google.com/spreadsheets/d/1uFwApLqntCTnJpWxLGW63Nw9Kgub8bKsAZRZAaDrSuA/export?format=xlsx";
 
 function App() {
   const [myDishes, setMyDishes] = useState([]);

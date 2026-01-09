@@ -1,15 +1,13 @@
-import React from 'react';
-import './Hero.css';
-import RonakElecricals from '../assets/images/RonakElecricals.png';
-import { scrollToSection } from '../components/Header.js'; 
-
+import React from "react";
+import "./Hero.css";
+import DheerajSteelworks from "../assets/images/DheerajSteelworks.png";
+import { scrollToSection } from "../components/Header.js";
 
 const Hero = () => {
-
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -22,32 +20,45 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Welcome to <br/> <span className="highlight"> Dheeraj Steelworks</span>
+              Welcome to <br />{" "}
+              <span className="highlight"> Dheeraj Steelworks</span>
             </h1>
             <p className="hero-subtitle">
-              Your Trusted Partner in Steel & Fabrication. Providing Steel Solutions for a Stronger Tomorrow.
+              Your Trusted Partner in Steel & Fabrication. Providing Steel
+              Solutions for a Stronger Tomorrow.
             </p>
-                          <div className="hero-features">
-                <div className="feature">
-                  <span className="feature-icon">🔌</span>
-                  <span>Wide Range of Products</span>
-                </div>
-                <div className="feature">
-                  <span className="feature-icon">⚡</span>
-                  <span>Trusted Brands</span>
-                </div>
-                <div className="feature">
-                  <span className="feature-icon">🛠️</span>
-                  <span>Quality & Reliability</span>
-                </div>
+            <div className="hero-features">
+              <div className="feature">
+                <span className="feature-icon">🏭</span>
+                <span>Wide Range of Products</span>
               </div>
+              <div className="feature">
+                <span className="feature-icon">🔧</span>
+                <span>Trusted Brands</span>
+              </div>
+              <div className="feature">
+                <span className="feature-icon">🛠️</span>
+                <span>Quality & Reliability</span>
+              </div>
+            </div>
             <div className="hero-buttons">
-              <button className="btn btn-primary" onClick={() => scrollToSection('menu')}>View Products</button>
+              <button
+                className="btn btn-primary"
+                onClick={() => scrollToSection("menu")}
+              >
+                View Products
+              </button>
             </div>
           </div>
           <div className="hero-image">
             <div className="floating-card">
-                <img className="rest-img" src={RonakElecricals} alt="Ronak Electricals" width={400} border-radius="20px"/>
+              <img
+                className="rest-img"
+                src={DheerajSteelworks}
+                alt="Dheeraj Steelworks"
+                width={400}
+                border-radius="20px"
+              />
             </div>
           </div>
         </div>
