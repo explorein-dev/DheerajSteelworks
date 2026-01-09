@@ -1,0 +1,124 @@
+.contact {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 100vh;
+  }
+
+  .section-title-contact {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: -20px;
+    color: white;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .contact-simple-card {
+    max-width: 480px;
+    width: 100%;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.10);
+    padding: 32px 24px;
+    margin: 32px 0;
+    color: #2c3e50;
+  }
+
+  .contact-simple-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #ff6b6b;
+  }
+  .contact-simple-card p {
+    font-size: 1.08rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #2c3e50;
+  }
+  .contact-simple-card textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: 1.5px solid #e1e8ed;
+    padding: 12px;
+    font-size: 1rem;
+    resize: vertical;
+    color: #2c3e50;
+    background: #f5f7fa;
+    margin-bottom: 8px;
+  }
+  .contact-simple-card textarea:focus {
+    outline: none;
+    border-color: #ff6b6b;
+    background: #fff;
+  }
+  .btn-submit {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.08rem;
+    width: 100%;
+    margin-top: 8px;
+  }
+  .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 107, 107, 0.18);
+  }
+  .contact-simple-card div {
+    margin-top: 18px;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.98rem;
+  }
+
+  @media (max-width: 768px) {
+    .contact-content {
+      margin-top: 18px;
+    }
+    .contact-simple-card {
+      padding: 18px 8px;
+      margin: 18px 0;
+      max-width: 98vw;
+    }
+  }
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .reservation-form {
+    padding: 30px 20px;
+  }
+
+  .map-placeholder {
+    padding: 40px 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,214 @@
+.menu-btn-relative {
+  position: relative !important;
+}
+
+.my-dishes-counter-badge {
+  position: absolute !important;
+  top: -8px !important;
+  right: -8px !important;
+  min-width: 22px !important;
+  height: 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #e74c3c !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.2) !important;
+  z-index: 10 !important;
+  border: 2px solid #fff !important;
+  pointer-events: none !important;
+  transform: translate(50%,-50%) !important;
+  padding: 2px 7px !important;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  padding: 15px 0;
+}
+
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  font-weight: 300;
+  display: block;
+  margin-top: -5px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 250px;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-list button {
+  background: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-list button:hover {
+  color: #ff6b6b;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reservation-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.reservation-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.mobile-menu-btn span {
+  width: 25px;
+  height: 3px;
+  background: #2c3e50;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .nav.mobile-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .nav-list button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .reservation-btn {
+    display: none;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+.my-dishes-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24) !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.my-dishes-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4) !important;
+}
+
+.my-dishes-counter-badge {
+  position: absolute !important;
+  top: -8px !important;
+  right: -8px !important;
+  min-width: 22px !important;
+  margin-right: 10px !important;
+  margin-top: 12px !important;
+  height: 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #e74c3c !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.2) !important;
+  z-index: 10 !important;
+  border: 2px solid #fff !important;
+  pointer-events: none !important;
+}

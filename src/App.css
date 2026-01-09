@@ -1,0 +1,21 @@
+.App {
+  min-height: 100vh;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.section:nth-child(odd) {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
